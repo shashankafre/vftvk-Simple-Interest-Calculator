@@ -21,7 +21,7 @@ function compuetinterest() {
   var years = document.getElementById("years").value;
   var year = new Date().getFullYear() + parseInt(years);
   var principal = document.getElementById("principal").value;
-  var amount = (principal * years * rate) / 100 + parseInt(principal);
+  var amount = (principal * years * rate) / 100;
   document.getElementById("result").innerHTML =
     "If you deposit <span style='background-color:yellow'>" +
     principal +
